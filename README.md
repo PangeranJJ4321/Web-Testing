@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 3. Jalankan tes
 ```powershell
-pytest -q
+pytest -s -v .\tests\test_saucedemo_advanced.py::test_checkout_flow  
 ```
 
 ## Struktur Project
@@ -36,7 +36,7 @@ pytest -q
 
 Contoh:
 ```powershell
-$env:BROWSER = "firefox"
+$env:BROWSER = "chrome"
 $env:HEADLESS = "1"
-pytest -q
+pytest -s -v .\tests\test_saucedemo_advanced.py::test_checkout_flow  
 ```
